@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+
+    <h1>Contact</h1>
+
+    <form action="process-form.php" method="post">
+
+        <label for="name">Employee Name</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="date">Date of Incident</label>
+        <input type="text" id="date" name="date">
+
+        <label for="time">Time of Incident</label>
+        <input type="text" id="time" name="time">
+
+        <label for="system">System Affected</label>
+        <select id="system" name="system">
+            <option value="1">Onboard</option>
+            <option value="2">Wayside</option>
+            <option value="3" selected>Communications</option>
+            <option value="4">Office</option>
+            <option value="5">RWPS</option>
+        </select>
+
+        <label for="operatingCon">Operating Conditions</label>
+        <textarea id="operatingCon" name="operatingCon"></textarea>
+
+        <label for="equipmentDT">Equipment Down Time</label>
+        <input type="equipmentDT" id="equipmentDT" name="equipmentDT">
+        
+        <label for="trainDT">Train Delay Time</label>
+        <input type="text" id="trainDT" name="trainDT">
+
+        <label for="component">Component Affected Decription</label>
+        <textarea id="component" name="component"></textarea>
+
+        <label for="trainNum">Train Number (if Onboard)</label>
+        <input type="text" id="trainNum" name="trainNum">
+
+        <label for="removedCompPN">Removed Component Part Number</label>
+        <input type="text" id="removedCompPN" name="removedCompPN">
+
+        <label for="replacementCompPN">Replacement Component Part Number</label>
+        <input type="text" id="replacementCompPN" name="replacementCompPN">
+
+        <label for="removedCompSN">Removed Component Serial Number</label>
+        <input type="text" id="removedCompSN" name="removedCompSN">
+
+        <label for="replacementCompSN">Replacement Component Serial Number</label>
+        <input type="text" id="replacementCompSN" name="replacementCompSN">
+
+        <label for="incident">Incident Description</label>
+        <textarea id="incident" name="incident"></textarea>
+
+        <label for="location">Location (Mile Marker)</label>
+        <input type="text" id="location" name="location">
+
+        <label for="preliminaryCause">Preliminary Cause Description</label>
+        <textarea id="preliminaryCause" name="preliminaryCause"></textarea>
+
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <br>
+
+        <button>Send</button>
+
+    </form>
+
+</body>
+</html>
